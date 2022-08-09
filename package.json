@@ -18,8 +18,7 @@
   "scripts": {
     "clobber": "rm -r node_modules; rm -r app/node_modules; rm app/build-config.json; rm -r .electron; rm -r lib",
     "serve": "node build/main.js --serve",
-    "start": "node build/main.js --run",
-    "dev": "node build/main.js --run-dev",
+    "build": "node build/main.js --run-dev",
     "package": "node build/main.js --package",
     "test": "cross-env TEST=true node build/main.js --test",
     "test-ci": "cross-env TEST=true nyc -s node build/main.js --test-ci",
